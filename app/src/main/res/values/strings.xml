@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Proyecto_Recetas</string>
+
+    <string name="aniadeNombre">Nombre de la receta</string>
+    <string name="aniadeImagen">Imagen de la receta</string>
+    <string name="aniadeDescr">Instrucciones de la receta</string>
+    <string name="btAcept">Aceptar</string>
+    <string name="btCanc">Cancelar</string>
+    <string name="vacio">No puedes dejar campos vacios</string>
+    <string name="ingredienteVacio">Introduce almenos un ingrediente!</string>
+    <string name="ingrediente">Ingredientes:</string>
+    <string name="instruc">Instrucciones:</string>
+    <string name="mnAniadir">Añadir receta nueva</string>
+    <string name="ordenarCat">Selecciona categoria:</string>
+    <string name="guardaCat">Categoria</string>
+    <string name="hIng">Ingrediente</string>
+    <string name="hCant">Cantidad</string>
+    <string name="bNuevoIngrediente">+</string>
+    <string name="selecIMg">Seleccionar imagen</string>
+    <string name="borrar">Eliminar</string>
+    <string name="editar">Editar</string>
+    <string name="cambiaImg">Pulse para cambiar la imagen</string>
+
+    <!--Array de nombres del spinner-->
+    <string-array name="categorias_arrays">
+        <item>Todos</item>
+        <item>Carnes</item>
+        <item>Pescados</item>
+        <item>Pasta</item>
+        <item>Verduras</item>
+        <item>Sopas</item>
+        <item>Postres</item>
+    </string-array>
+
+</resources>
