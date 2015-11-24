@@ -54,6 +54,7 @@ public class MainActivity extends Activity {
         super.onResume();
         generaAdaptador();
         List<Categoria> lc=gc.select();
+        //Inicializo solo una vez las categorias.
         if(lc.size()==0){
             gc.generacategorias();
         }
