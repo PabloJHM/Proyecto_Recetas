@@ -75,7 +75,7 @@ public class Aniadir extends Activity{
 
     public void aceptar(View v){
         Receta r = new Receta();
-        int idReceta;
+        int idReceta=-1;
         boolean añadir=true;
         String nombre, inst, nombreIng;
         long idIngrediente;
@@ -116,12 +116,13 @@ public class Aniadir extends Activity{
                         }else{
                             cantidad = Integer.parseInt(cant);
                             if(añadir) {
+                                añadir=false;
                                 idReceta = (int) gr.insert(r);
-                                ri = new RecetaIngrediente(idReceta, idIngrediente, cantidad);
-                                gri.insert(ri);
-                                setResult(Activity.RESULT_OK);
-                                finish();
                             }
+                            ri = new RecetaIngrediente(idReceta, idIngrediente, cantidad);
+                            gri.insert(ri);
+                            setResult(Activity.RESULT_OK);
+                            finish();
                         }
                     //Si el ingrediente no existe en la base de datos lo añadimos
                     } else {
@@ -138,12 +139,13 @@ public class Aniadir extends Activity{
                             }else{
                                 cantidad = Integer.parseInt(cantIng);
                                 if(añadir) {
+                                    añadir=false;
                                     idReceta = (int) gr.insert(r);
-                                    ri = new RecetaIngrediente(idReceta, idIngrediente, cantidad);
-                                    gri.insert(ri);
-                                    setResult(Activity.RESULT_OK);
-                                    finish();
                                 }
+                                ri = new RecetaIngrediente(idReceta, idIngrediente, cantidad);
+                                gri.insert(ri);
+                                setResult(Activity.RESULT_OK);
+                                finish();
                             }
                         }
                     }
